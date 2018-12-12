@@ -1442,7 +1442,7 @@ pre .javascript .function {
   margin-left: 20px;
 }
 .posts-collapse .collection-title small {
-  color: #bbb;
+  color: #666;
   margin-left: 5px;
 }
 .posts-collapse .collection-title::before {
@@ -1454,7 +1454,7 @@ pre .javascript .function {
   margin-top: -4px;
   width: 8px;
   height: 8px;
-  background: #bbb;
+  background: #666;
   border-radius: 50%;
 }
 .posts-collapse .post {
@@ -1476,7 +1476,7 @@ pre .javascript .function {
   width: 6px;
   height: 6px;
   margin-left: -4px;
-  background: #bbb;
+  background: #666;
   border-radius: 50%;
   border: 1px solid #fff;
   transition-duration: 0.2s;
@@ -1896,7 +1896,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #e2e2ad;
+  background: #14b994;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -2334,7 +2334,7 @@ pre .javascript .function {
   margin: 5px 10px;
 }
 .category-all-page .category-list-count {
-  color: #bbb;
+  color: #666;
 }
 .category-all-page .category-list-count:before {
   display: inline;
@@ -2994,6 +2994,7 @@ pre .deletion {
 }
 .category-all-page {
   colour: #000;
+  font-size: 24px;
   padding: 86px 36px 36px 36px;
 }
 .category-list-item {
