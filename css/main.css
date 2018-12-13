@@ -1896,7 +1896,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #d9af61;
+  background: #218a4b;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -3018,6 +3018,9 @@ pre .deletion {
 .header-inner {
   padding-top: 0px;
   padding-bottom: 0px;
+}
+.sidebar {
+  background-color: rgba(0,0,0,0.75);
 }
 .post {
   margin-top: 60px;
