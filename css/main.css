@@ -1896,7 +1896,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #78ed7f;
+  background: #ffffb3;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -3011,6 +3011,9 @@ pre .deletion {
 .tag-cloud a:hover {
   border-bottom: 1px solid #a166ab;
   text-decoration: none;
+}
+.header {
+  background-color: rgba(255,255,255,0.8);
 }
 .post {
   margin-top: 60px;
