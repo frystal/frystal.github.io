@@ -563,7 +563,7 @@
                 
                   <span class="post-meta-item-text">更新于</span>
                 
-                <time title="修改时间：2019-09-22 09:26:07" itemprop="dateModified" datetime="2019-09-22T09:26:07+08:00">2019-09-22</time>
+                <time title="修改时间：2019-09-22 09:28:47" itemprop="dateModified" datetime="2019-09-22T09:28:47+08:00">2019-09-22</time>
               
             
           </span>
@@ -597,14 +597,16 @@
 
       
         
+          <p>为啥HTB的vpn那么难用啊!<br></p>
+          <!--noindex-->
           
-            <a id="more"></a>
-<p>首先,进去是个管理网站的应用的主界面<br><img src="/2019/07/02/netmon/./netmon/1.png" alt="">  </p>
-<p>例行sparta扫一遍<br><img src="/2019/07/02/netmon/./netmon/2.png" alt=""><br>发现开了ftp,可以匿名登陆<br><img src="/2019/07/02/netmon/./netmon/3.png" alt=""><br>拿到user.txt<br><img src="/2019/07/02/netmon/./netmon/4.png" alt=""><br>找root的时候550无权限,看看起来是要对那个网络管理软件下手了  </p>
-<p>找到一个CVE,但先要登陆进后台.<br>就在去翻PRTG的设置,找到了用户名密码<br><figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">dbcredentials</span>&gt;</span></span><br><span class="line">  0</span><br><span class="line"><span class="tag">&lt;/<span class="name">dbcredentials</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">dbpassword</span>&gt;</span></span><br><span class="line">  <span class="comment">&lt;!-- User: prtgadmin --&gt;</span></span><br><span class="line">  PrTg@dmin2018</span><br><span class="line"><span class="tag">&lt;/<span class="name">dbpassword</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">dbtimeout</span>&gt;</span></span><br><span class="line">  60</span><br><span class="line"><span class="tag">&lt;/<span class="name">dbtimeout</span>&gt;</span></span><br></pre></td></tr></table></figure></p>
-<p>但登录不上去,去看了看论坛才知道,密码要与时俱进2018改成2019(外国人真勤快)<br><img src="/2019/07/02/netmon/./netmon/5.png" alt=""><br>之后就是照着 CVE-2018-9276 .进后台设置消息触发,来执行任意代码.(网是真的差,每次做到一半都有人重置,心态都要炸了)<br>然后顺利把admin下桌面上的root.txt传到根目录下一读(不会提权真的菜阿)</p>
-
-          
+            <div class="post-button text-center">
+              <a class="btn" href="/2019/07/02/netmon/" rel="contents">
+                阅读全文 &raquo;
+              </a>
+            </div>
+         
+          <!--/noindex-->
         
       
     </div>
