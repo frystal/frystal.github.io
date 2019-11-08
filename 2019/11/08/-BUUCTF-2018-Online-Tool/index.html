@@ -118,18 +118,18 @@
 
 
 
-  <meta name="description" content="进去就直接是源码123456789101112131415161718&amp;lt;?phpif (isset($_SERVER[&apos;HTTP_X_FORWARDED_FOR&apos;])) &amp;#123;    $_SERVER[&apos;REMOTE_ADDR&apos;] = $_SERVER[&apos;HTTP_X_FORWARDED_FOR&apos;];&amp;#125;if(!isset($_GET[&apos;host&apos;])) &amp;#123;">
+  <meta name="description" content="NULL">
 <meta name="keywords" content="buuoj">
 <meta property="og:type" content="article">
 <meta property="og:title" content="[BUUCTF 2018]Online Tool">
 <meta property="og:url" content="http://frystal.github.io/2019/11/08/-BUUCTF-2018-Online-Tool/index.html">
 <meta property="og:site_name" content="Frystal&#39;s blog">
-<meta property="og:description" content="进去就直接是源码123456789101112131415161718&amp;lt;?phpif (isset($_SERVER[&apos;HTTP_X_FORWARDED_FOR&apos;])) &amp;#123;    $_SERVER[&apos;REMOTE_ADDR&apos;] = $_SERVER[&apos;HTTP_X_FORWARDED_FOR&apos;];&amp;#125;if(!isset($_GET[&apos;host&apos;])) &amp;#123;">
+<meta property="og:description" content="NULL">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2019-11-08T04:13:09.422Z">
+<meta property="og:updated_time" content="2019-11-08T04:41:24.524Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="[BUUCTF 2018]Online Tool">
-<meta name="twitter:description" content="进去就直接是源码123456789101112131415161718&amp;lt;?phpif (isset($_SERVER[&apos;HTTP_X_FORWARDED_FOR&apos;])) &amp;#123;    $_SERVER[&apos;REMOTE_ADDR&apos;] = $_SERVER[&apos;HTTP_X_FORWARDED_FOR&apos;];&amp;#125;if(!isset($_GET[&apos;host&apos;])) &amp;#123;">
+<meta name="twitter:description" content="NULL">
 
 
 
@@ -387,7 +387,7 @@
                 
               
 
-              <time title="创建时间：2019-11-08 12:11:28 / 修改时间：12:13:09" itemprop="dateCreated datePublished" datetime="2019-11-08T12:11:28+08:00">2019-11-08</time>
+              <time title="创建时间：2019-11-08 12:11:28 / 修改时间：12:41:24" itemprop="dateCreated datePublished" datetime="2019-11-08T12:11:28+08:00">2019-11-08</time>
             
 
             
@@ -432,8 +432,7 @@
       
 
       
-        <a id="more"></a>
-<p>进去就直接是源码<br><figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line"><span class="php"><span class="meta">&lt;?php</span></span></span><br><span class="line"><span class="php"></span></span><br><span class="line"><span class="php"><span class="keyword">if</span> (<span class="keyword">isset</span>($_SERVER[<span class="string">'HTTP_X_FORWARDED_FOR'</span>])) &#123;</span></span><br><span class="line"><span class="php">    $_SERVER[<span class="string">'REMOTE_ADDR'</span>] = $_SERVER[<span class="string">'HTTP_X_FORWARDED_FOR'</span>];</span></span><br><span class="line"><span class="php">&#125;</span></span><br><span class="line"><span class="php"></span></span><br><span class="line"><span class="php"><span class="keyword">if</span>(!<span class="keyword">isset</span>($_GET[<span class="string">'host'</span>])) &#123;</span></span><br><span class="line"><span class="php">    highlight_file(<span class="keyword">__FILE__</span>);</span></span><br><span class="line"><span class="php">&#125; <span class="keyword">else</span> &#123;</span></span><br><span class="line"><span class="php">    $host = $_GET[<span class="string">'host'</span>];</span></span><br><span class="line"><span class="php">    $host = escapeshellarg($host);</span></span><br><span class="line"><span class="php">    $host = escapeshellcmd($host);</span></span><br><span class="line"><span class="php">    $sandbox = md5(<span class="string">"glzjin"</span>. $_SERVER[<span class="string">'REMOTE_ADDR'</span>]);</span></span><br><span class="line"><span class="php">    <span class="keyword">echo</span> <span class="string">'you are in sandbox '</span>.$sandbox;</span></span><br><span class="line"><span class="php">    @mkdir($sandbox);</span></span><br><span class="line"><span class="php">    chdir($sandbox);</span></span><br><span class="line"><span class="php">    <span class="keyword">echo</span> system(<span class="string">"nmap -T5 -sT -Pn --host-timeout 2 -F "</span>.$host);</span></span><br><span class="line"><span class="php">&#125;</span></span><br></pre></td></tr></table></figure></p>
+        <p>NULL<br><a id="more"></a><br>进去就直接是源码<br><figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line"><span class="php"><span class="meta">&lt;?php</span></span></span><br><span class="line"><span class="php"></span></span><br><span class="line"><span class="php"><span class="keyword">if</span> (<span class="keyword">isset</span>($_SERVER[<span class="string">'HTTP_X_FORWARDED_FOR'</span>])) &#123;</span></span><br><span class="line"><span class="php">    $_SERVER[<span class="string">'REMOTE_ADDR'</span>] = $_SERVER[<span class="string">'HTTP_X_FORWARDED_FOR'</span>];</span></span><br><span class="line"><span class="php">&#125;</span></span><br><span class="line"><span class="php"></span></span><br><span class="line"><span class="php"><span class="keyword">if</span>(!<span class="keyword">isset</span>($_GET[<span class="string">'host'</span>])) &#123;</span></span><br><span class="line"><span class="php">    highlight_file(<span class="keyword">__FILE__</span>);</span></span><br><span class="line"><span class="php">&#125; <span class="keyword">else</span> &#123;</span></span><br><span class="line"><span class="php">    $host = $_GET[<span class="string">'host'</span>];</span></span><br><span class="line"><span class="php">    $host = escapeshellarg($host);</span></span><br><span class="line"><span class="php">    $host = escapeshellcmd($host);</span></span><br><span class="line"><span class="php">    $sandbox = md5(<span class="string">"glzjin"</span>. $_SERVER[<span class="string">'REMOTE_ADDR'</span>]);</span></span><br><span class="line"><span class="php">    <span class="keyword">echo</span> <span class="string">'you are in sandbox '</span>.$sandbox;</span></span><br><span class="line"><span class="php">    @mkdir($sandbox);</span></span><br><span class="line"><span class="php">    chdir($sandbox);</span></span><br><span class="line"><span class="php">    <span class="keyword">echo</span> system(<span class="string">"nmap -T5 -sT -Pn --host-timeout 2 -F "</span>.$host);</span></span><br><span class="line"><span class="php">&#125;</span></span><br></pre></td></tr></table></figure></p>
 <p>审计一下，直接说明了，就在<br><figure class="highlight autoit"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$host = escapeshellarg($host)<span class="comment">;</span></span><br><span class="line">$host = escapeshellcmd($host)<span class="comment">;</span></span><br></pre></td></tr></table></figure></p>
 <p> 对于字符串的处理上，能绕过它的单引号闭合。<br> 前一个，esxapeshellarg()函数，会在传入的字符串首尾都加上一个’ 号，对于字符串内存在的 ‘ ,会对其加上\转义，之后再在其上在加上一对 ‘<br> 即 ‘ -&gt; ‘’\’’’   </p>
 <p> 后一个，escapeshellcmd()函数，则会对输入字符串内的特殊字符全部加上\来转义，并会对不成对的’ 也加上’ 转义  </p>
