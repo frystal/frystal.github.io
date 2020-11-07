@@ -118,18 +118,18 @@
 
 
 
-  <meta name="description" content="菜">
+  <meta name="description" content="我,菜">
 <meta name="keywords" content="ETH,blockchain">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Ethernaut(1-3)">
 <meta property="og:url" content="http://frystal.github.io/2020/11/05/Ethernaut(1-3)/index.html">
 <meta property="og:site_name" content="Frystal&#39;s blog">
-<meta property="og:description" content="菜">
+<meta property="og:description" content="我,菜">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2020-11-05T15:29:54.917Z">
+<meta property="og:updated_time" content="2020-11-07T12:33:22.961Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Ethernaut(1-3)">
-<meta name="twitter:description" content="菜">
+<meta name="twitter:description" content="我,菜">
 
 
 
@@ -387,12 +387,24 @@
                 
               
 
-              <time title="创建时间：2020-11-05 22:59:50 / 修改时间：23:29:54" itemprop="dateCreated datePublished" datetime="2020-11-05T22:59:50+08:00">2020-11-05</time>
+              <time title="创建时间：2020-11-05 22:59:50" itemprop="dateCreated datePublished" datetime="2020-11-05T22:59:50+08:00">2020-11-05</time>
             
 
             
               
 
+              
+                
+                <span class="post-meta-divider">|</span>
+                
+
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">更新于</span>
+                
+                <time title="修改时间：2020-11-07 20:33:22" itemprop="dateModified" datetime="2020-11-07T20:33:22+08:00">2020-11-07</time>
               
             
           </span>
@@ -432,7 +444,7 @@
       
 
       
-        <p>菜<br><a id="more"></a><br>ethernaut上的智能合约的入土题<br><figure class="highlight awk"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">地址:</span><br><span class="line">https:<span class="regexp">//</span>ethernaut.openzeppelin.com<span class="regexp">/level/</span><span class="number">0</span>xdf51a9e8ce57e7787e4a27dd19880fd7106b9a5c</span><br></pre></td></tr></table></figure></p>
+        <p>我,菜<br><a id="more"></a><br>ethernaut上的智能合约的入土题<br><figure class="highlight awk"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">地址:</span><br><span class="line">https:<span class="regexp">//</span>ethernaut.openzeppelin.com<span class="regexp">/level/</span><span class="number">0</span>xdf51a9e8ce57e7787e4a27dd19880fd7106b9a5c</span><br></pre></td></tr></table></figure></p>
 <h2 id="level1-Fallback"><a href="#level1-Fallback" class="headerlink" title="level1  Fallback"></a>level1  Fallback</h2><p>智能合约苦手死的很安详 :)<br>下面是题目要求<br><figure class="highlight livecodeserver"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">You will beat this level <span class="keyword">if</span></span><br><span class="line">    <span class="number">1.</span>you claim ownership <span class="keyword">of</span> <span class="keyword">the</span> contract</span><br><span class="line">    <span class="number">2.</span>you reduce its balance <span class="built_in">to</span> <span class="number">0</span></span><br><span class="line">Things that might help</span><br><span class="line">    <span class="number">1.</span>How <span class="built_in">to</span> <span class="built_in">send</span> ether when interacting <span class="keyword">with</span> <span class="keyword">an</span> ABI</span><br><span class="line">    <span class="number">2.</span>How <span class="built_in">to</span> <span class="built_in">send</span> ether outside <span class="keyword">of</span> <span class="keyword">the</span> ABI</span><br><span class="line">    <span class="number">3.</span>Converting <span class="built_in">to</span> <span class="keyword">and</span> <span class="built_in">from</span> wei/ether units -see help() <span class="keyword">command</span>-</span><br><span class="line">    <span class="number">4.</span>Fallback methods</span><br></pre></td></tr></table></figure></p>
 <p>题目的代码以及解释<br><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br></pre></td><td class="code"><pre><span class="line">pragma solidity ^<span class="number">0.4</span><span class="number">.18</span>;</span><br><span class="line"></span><br><span class="line"><span class="keyword">import</span> <span class="string">'zeppelin-solidity/contracts/ownership/Ownable.sol'</span>;</span><br><span class="line"><span class="keyword">import</span> <span class="string">'openzeppelin-solidity/contracts/math/SafeMath.sol'</span>;</span><br><span class="line"></span><br><span class="line">contract Fallback is Ownable &#123;</span><br><span class="line">  </span><br><span class="line">  using SafeMath <span class="keyword">for</span> uint256;</span><br><span class="line">  mapping(<span class="function"><span class="params">address</span> =&gt;</span> uint) public contributions;</span><br><span class="line"></span><br><span class="line">  <span class="function"><span class="keyword">function</span> <span class="title">Fallback</span>(<span class="params"></span>) <span class="title">public</span> </span>&#123;</span><br><span class="line">    contributions[msg.sender] = <span class="number">1000</span> * (<span class="number">1</span> ether);</span><br><span class="line">  &#125;<span class="comment">//初始化函数，将智能合约创建者的值置为1000ETH</span></span><br><span class="line"></span><br><span class="line">  <span class="function"><span class="keyword">function</span> <span class="title">contribute</span>(<span class="params"></span>) <span class="title">public</span> <span class="title">payable</span> </span>&#123;</span><br><span class="line">    <span class="built_in">require</span>(msg.value &lt; <span class="number">0.001</span> ether);</span><br><span class="line">    contributions[msg.sender] = contributions[msg.sender].add(msg.value);</span><br><span class="line">    <span class="keyword">if</span>(contributions[msg.sender] &gt; contributions[owner]) &#123;</span><br><span class="line">      owner = msg.sender;</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;<span class="comment">//给发送者对应数组增加数值(发送来多少eth，必须小于0.001ether)，然后比较如果比owner多就变为owner</span></span><br><span class="line"></span><br><span class="line">  <span class="function"><span class="keyword">function</span> <span class="title">getContribution</span>(<span class="params"></span>) <span class="title">public</span> <span class="title">view</span> <span class="title">returns</span> (<span class="params">uint</span>) </span>&#123;</span><br><span class="line">    <span class="keyword">return</span> contributions[msg.sender];</span><br><span class="line">  &#125;<span class="comment">//获取你当前的数值</span></span><br><span class="line"></span><br><span class="line">  <span class="function"><span class="keyword">function</span> <span class="title">withdraw</span>(<span class="params"></span>) <span class="title">public</span> <span class="title">onlyOwner</span> </span>&#123;</span><br><span class="line">    owner.transfer(<span class="keyword">this</span>.balance);</span><br><span class="line">  &#125;<span class="comment">//退回智能合约里所有的余额</span></span><br><span class="line"></span><br><span class="line">  <span class="function"><span class="keyword">function</span>(<span class="params"></span>) <span class="title">payable</span> <span class="title">public</span> </span>&#123;</span><br><span class="line">    <span class="built_in">require</span>(msg.value &gt; <span class="number">0</span> &amp;&amp; contributions[msg.sender] &gt; <span class="number">0</span>);</span><br><span class="line">    owner = msg.sender;</span><br><span class="line">  &#125;<span class="comment">//fallback函数，发送来的值大于0，且数组里有值，就改变owner</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
 <p>分析一下代码，先调用contribute，往里面存一点钱，然后调用fallback，就可以改变owner，然后withdraw()把钱全退回来就ok<br><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">contract.contribute(&#123;<span class="attr">value</span>:<span class="number">1</span>&#125;)<span class="comment">//调用contribute(),往里面冲1Wei</span></span><br><span class="line">contract.sendTransaction(&#123;<span class="attr">value</span>:<span class="number">1</span>&#125;)<span class="comment">//往合约打1Wei但不调用方法，直接跳的fallback</span></span><br><span class="line">contract.withdraw()<span class="comment">//取回余额，ok</span></span><br></pre></td></tr></table></figure></p>
@@ -490,6 +502,10 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2020/11/07/Ethernaut(4-11)/" rel="prev" title="Ethernaut(4-11)">
+                Ethernaut(4-11) <i class="fa fa-chevron-right"></i>
+              </a>
             
           </div>
         </div>
@@ -559,7 +575,7 @@
                 
                   <a href="/archives/">
                 
-                    <span class="site-state-item-count">25</span>
+                    <span class="site-state-item-count">26</span>
                     <span class="site-state-item-name">日志</span>
                   </a>
                 </div>
